@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      #main-box {
+        display: flex;
+        align-items: center;
+      }
+      #mid-box {
+        background-color: rgb(0, 0, 0);
+        height: 150px;
+        width: 150px;
+        margin: 0 20px;
+        border-radius: 15%;
+        border: 5px ridge grey;
+      }
+      #left-box,
+      #right-box {
+        width: 55px;
+        display: flex;
+        justify-content: center;
+      }
+      #pre-btn,
+      #nex-btn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #0055ff61;
+        border: 2px solid black;
+        font-weight: 900;
+        transition: all 0.3s ease;
+      }
+      #pre-btn:hover,
+      #nex-btn:hover {
+        width: 40px;
+        height: 40px;
+      }
+      #pre-btn:active,
+      #nex-btn:active {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-box">
+      <div id="left-box"><button id="pre-btn"><</button></div>
+      <div id="mid-box"></div>
+      <div id="right-box"><button id="nex-btn">></button></div>
+    </div>
+
+    <script src="color-app.js"></script>
+  </body>
+</html>
